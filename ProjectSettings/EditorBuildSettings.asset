@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Solitaire/Scenes/Menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: 0fa7d81ff8eec594ba06bd9efa899b01
   - enabled: 1
-    path: Assets/Solitaire/Scenes/Game.unity
+    path: Assets/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Solitaire/Scenes/Lose Screen.unity
+    path: Assets/Scenes/Lose Screen.unity
     guid: 0c6c67121f04e4f008681e403046c6e5
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: edf6b5780a24a404086b35cab7e0cfa6, type: 2}
