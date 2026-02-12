@@ -50,6 +50,8 @@ public class GoogleAdsManager : MonoBehaviour
             {
                 Debug.LogError("interstitial ad failed to load an ad " +
                                "with error : " + error);
+                // Retry after 5 seconds
+                Invoke("LoadInterstitialAd", 5f);
                 return;
             }
 

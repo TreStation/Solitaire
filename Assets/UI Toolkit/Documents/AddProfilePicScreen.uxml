@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/LoginScreen.uss?fileID=7433441132597879392&amp;guid=846d8dea017dd4e169514931e0c58650&amp;type=3#LoginScreen"/>
+    <ui:VisualElement name="add-profile-pic-screen" class="login-screen">
+        <ui:Button name="back-btn" text="←" class="back-button"/>
+        <ui:Label text="Enter Username" class="instruction-text" style="font-size: 20px; margin-bottom: 30px;"/>
+        <ui:VisualElement class="form-container">
+            <ui:TextField name="username-input" placeholder-text="Username" class="input-field" style="margin-bottom: 40px;"/>
+            <ui:Button name="next-btn" text="Next" class="sign-in-button" style="width: 200px; height: 50px; font-size: 20px;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

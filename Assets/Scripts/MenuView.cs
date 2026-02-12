@@ -17,6 +17,7 @@ public class MenuView : MonoBehaviour
     public GameObject loadingLevelMenu;
     public GameObject drawingMenu;
     public GameObject formMenu;
+    public GameObject loginFlow;
     private readonly float fadeInDuration = 2f;
     private readonly float fadeOutDuration = 1.5f;
 
@@ -24,41 +25,12 @@ public class MenuView : MonoBehaviour
     
     private async void Start()
     {
-        // Initialize Supabase
-        await SupabaseAuthManager.Instance.InitializeSupabase();
-        
-        // Start anonymous (instant, works offline)
-        await SupabaseAuthManager.Instance.SignInAnonymously();
-        
-        // Link platform account in background (silent)
-        bool linked = await SupabaseAuthManager.Instance.AutoAuthenticateWithPlatform();
-        
-        if (linked)
-        {
-            Debug.Log("Platform account linked! IAPs will persist across devices.");
-        }
-        else
-        {
-            Debug.Log("Playing anonymously. Prompt user to link account before IAP.");
-        }
-        
+        loginFlow.SetActive(false);
         LoadMainMenu(); 
     }
 
     public async void OnShopClick()
     {
-            if (SupabaseAuthManager.Instance.IsAnonymousUser())
-            {
-                // Try to link platform account
-                bool linked = await SupabaseAuthManager.Instance.AutoAuthenticateWithPlatform();
-            
-                if (!linked)
-                {
-                    Debug.Log("User not linked. IAPs will not persist across devices.");
-                    return;
-                }
-            }
-            Debug.Log("NOW Process IAP");
             ShowMenu("Purchase");
     }
 

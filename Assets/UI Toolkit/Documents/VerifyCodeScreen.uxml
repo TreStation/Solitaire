@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="../Styles/LoginScreen.uss" />
+    <ui:VisualElement name="verify-code-screen" class="login-screen">
+        <ui:Button name="back-btn" text="←" class="back-button" />
+        
+        <ui:Label text="Confirm Your Phone Number" class="instruction-text" style="font-size: 24px; margin-bottom: 5px;" />
+        <ui:Label text="Enter the code sent to +1 777-444-0000" class="subtitle-text">
+            <!-- We can't easily inline color styles in a single label text in UXML without rich text, 
+                 so for now we assume the whole text is grey or we split it. 
+                 Unity's Label supports rich text if enabled. -->
+        </ui:Label>
+        
+        <ui:VisualElement class="form-container">
+            <ui:VisualElement class="otp-container">
+                <ui:TextField name="otp-1" class="otp-input" max-length="1" />
+                <ui:TextField name="otp-2" class="otp-input" max-length="1" />
+                <ui:TextField name="otp-3" class="otp-input" max-length="1" />
+                <ui:TextField name="otp-4" class="otp-input" max-length="1" />
+            </ui:VisualElement>
+            
+            <ui:Button name="next-btn" text="Next" class="sign-in-button" style="width: 200px; height: 50px; font-size: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

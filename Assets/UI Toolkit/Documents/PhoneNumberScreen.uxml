@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="../Styles/LoginScreen.uss" />
+    <ui:VisualElement name="phone-number-screen" class="login-screen">
+        <ui:Button name="back-btn" text="←" class="back-button" />
+        <ui:Button name="sign-in-nav-btn" text="Sign In" class="create-account-button" />
+        
+        <ui:Label text="Welcome!" class="title-text" />
+        
+        <ui:VisualElement class="form-container">
+            <ui:Label text="Enter your phone number" class="instruction-text" />
+            
+            <ui:TextField name="phone-input" value="+1 " class="input-field" />
+            
+            <ui:Button name="next-btn" text="Next" class="sign-in-button" style="width: 200px; height: 50px; font-size: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

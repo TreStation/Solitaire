@@ -137,13 +137,13 @@ PlayerSettings:
   switchGraphicsJobsSyncAfterKick: 1
   vulkanNumSwapchainBuffers: 3
   vulkanEnableSetSRGBWrite: 0
-  vulkanEnablePreTransform: 1
+  vulkanEnablePreTransform: 0
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 45
+  bundleVersion: 56
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -176,7 +176,7 @@ PlayerSettings:
     iPhone: 11
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 45
+  AndroidBundleVersionCode: 56
   AndroidMinSdkVersion: 25
   AndroidTargetSdkVersion: 35
   AndroidPreferredInstallLocation: 1
@@ -898,22 +898,25 @@ PlayerSettings:
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: DOTWEEN;LEVELPLAY_DEPENDENCIES_INSTALLED;APP_UI_EDITOR_ONLY
+    Android: DOTWEEN;LEVELPLAY_DEPENDENCIES_INSTALLED;APP_UI_EDITOR_ONLY;DOTWEEN_TEXTMESHPRO
     Bratwurst: DOTWEEN
-    EmbeddedLinux: DOTWEEN
-    GameCoreScarlett: DOTWEEN
-    GameCoreXboxOne: DOTWEEN
-    LinuxHeadlessSimulation: DOTWEEN
-    Nintendo Switch: DOTWEEN
-    PS4: DOTWEEN
-    PS5: DOTWEEN
-    QNX: DOTWEEN
-    Standalone: DOTWEEN;LEVELPLAY_DEPENDENCIES_INSTALLED;APP_UI_EDITOR_ONLY
-    WebGL: DOTWEEN
-    Windows Store Apps: DOTWEEN
-    XboxOne: DOTWEEN
-    iPhone: DOTWEEN
-    tvOS: DOTWEEN
+    EmbeddedLinux: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    GameCoreScarlett: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    GameCoreXboxOne: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    Kepler: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    LinuxHeadlessSimulation: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    Nintendo Switch: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    Nintendo Switch 2: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    PS4: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    PS5: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    QNX: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    Standalone: DOTWEEN;LEVELPLAY_DEPENDENCIES_INSTALLED;APP_UI_EDITOR_ONLY;DOTWEEN_TEXTMESHPRO
+    VisionOS: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    WebGL: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    Windows Store Apps: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    XboxOne: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    iPhone: DOTWEEN;DOTWEEN_TEXTMESHPRO
+    tvOS: DOTWEEN;DOTWEEN_TEXTMESHPRO
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

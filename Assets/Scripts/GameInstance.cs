@@ -21,6 +21,9 @@ public class GameInstance : MonoBehaviour
 
     private void Awake()
     {
+        // Add Runtime Debug Console for Internal Testing
+        gameObject.AddComponent<RuntimeDebugConsole>();
+
         if (instance == null)
         {
             instance = this;

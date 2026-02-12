@@ -35,7 +35,7 @@ public class SolitaireIAP : MonoBehaviour
             premiumButton.interactable = false; // Disable the premium button
             premiumBtnText.text = "Purchased";
         }
-        else if (product.definition.id.Equals("gemboostiap"))
+        else if (product.definition.id.Equals("gemboostIAP"))
         {
             PlayerPrefs.SetInt("GemBoost", 1);
             PlayerPrefs.Save();

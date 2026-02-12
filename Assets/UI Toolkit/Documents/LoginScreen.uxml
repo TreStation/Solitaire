@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/LoginScreen.uss?fileID=7433441132597879392&amp;guid=846d8dea017dd4e169514931e0c58650&amp;type=3#LoginScreen"/>
+    <ui:VisualElement name="login-screen" class="login-screen">
+        <ui:Button name="create-account-btn" text="Create Account" class="create-account-button" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Examples%20&amp;%20Extras/Fonts/Bangers.ttf?fileID=12800000&amp;guid=5dd49b3eacc540408c98eee0de38e0f1&amp;type=3#Bangers&quot;); padding-top: 15px; padding-right: 25px; padding-bottom: 15px; padding-left: 25px; font-size: 18px;"/>
+        <ui:Label text="Welcome Back!" class="title-text"/>
+        <ui:VisualElement class="form-container">
+            <ui:TextField name="username-input" placeholder-text="Username" class="input-field"/>
+            <ui:TextField name="password-input" password="true" placeholder-text="Password" class="input-field"/>
+            <ui:Button name="sign-in-btn" text="Sign In" class="sign-in-button"/>
+            <ui:Label text="Forgot Password?" class="forgot-password-link"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="LoginScreen" src="project://database/Assets/UI%20Toolkit/Documents/LoginScreen.uxml?fileID=9197481963319205126&amp;guid=8ee86f3fc4028493ca0e9b0a284e5dbb&amp;type=3#LoginScreen"/>
+    <ui:Template name="PhoneNumberScreen" src="project://database/Assets/UI%20Toolkit/Documents/PhoneNumberScreen.uxml?fileID=9197481963319205126&amp;guid=b060c30398a1c4e298d98f4f43c50afc&amp;type=3#PhoneNumberScreen"/>
+    <ui:Template name="VerifyCodeScreen" src="VerifyCodeScreen.uxml" />
+    <ui:Template name="AddProfilePicScreen" src="AddProfilePicScreen.uxml" />
+    <ui:Template name="CreatePasswordScreen" src="CreatePasswordScreen.uxml" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Root.uss?fileID=7433441132597879392&amp;guid=0ad5687b26d7049389625774afb0014d&amp;type=3#Root"/>
+    <ui:VisualElement name="screenContainer" style="flex-grow: 1; width: 100%; height: 100%;">
+        <ui:Instance name="LoginScreen" template="LoginScreen" style="flex-grow: 1; width: 100%; height: 100%;" />
+        <ui:Instance name="PhoneNumberScreen" template="PhoneNumberScreen" style="flex-grow: 1; width: 100%; height: 100%; display: none;" />
+        <ui:Instance name="VerifyCodeScreen" template="VerifyCodeScreen" style="flex-grow: 1; width: 100%; height: 100%; display: none;" />
+        <ui:Instance name="AddProfilePicScreen" template="AddProfilePicScreen" style="flex-grow: 1; width: 100%; height: 100%; display: none;" />
+        <ui:Instance name="CreatePasswordScreen" template="CreatePasswordScreen" style="flex-grow: 1; width: 100%; height: 100%; display: none;" />
+    </ui:VisualElement>
+</ui:UXML>
