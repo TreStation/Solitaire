@@ -72,14 +72,10 @@ public class GameInstance : MonoBehaviour
     public void Win()
     {
         int earnedGems;
-        if (PlayerPrefs.GetInt("GemBoost", 0) == 1)
-        {
-            earnedGems = (Difficulty == Difficulty.Easy) ? 10 : 20;
-        }
-        else
-        {
-            earnedGems = (Difficulty == Difficulty.Easy) ? 5 : 10;
-        }
+        bool hasGemBoost = PlayerPrefs.GetInt("GemBoost", 0) == 1;
+
+        earnedGems = (Difficulty == Difficulty.Easy) ? 5 : 10;
+        if (hasGemBoost) earnedGems *= 2;
         PlayerController.State.Gems += earnedGems;
 
         SaveToDevice();
@@ -88,15 +84,10 @@ public class GameInstance : MonoBehaviour
 
     public void ShowAd()
     {
-        if (PlayerPrefs.GetInt("Premium", 0) == 1)
-        {
-            AdsManager.ShowInterstitialAd();
+        bool hasPremium = PlayerPrefs.GetInt("Premium", 0) == 1;
 
-        }
-        else
-        {
-            SceneManager.LoadScene("Game");
-        }
+        if (hasPremium) SceneManager.LoadScene("Game");
+        else AdsManager.ShowInterstitialAd();
     }
 
     public void ExitToMenu()

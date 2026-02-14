@@ -5220,9 +5220,9 @@ GameObject:
   m_Component:
   - component: {fileID: 925248327}
   - component: {fileID: 925248326}
-  - component: {fileID: 925248329}
   - component: {fileID: 925248328}
   - component: {fileID: 925248330}
+  - component: {fileID: 925248329}
   m_Layer: 0
   m_Name: Game Instance
   m_TagString: Untagged

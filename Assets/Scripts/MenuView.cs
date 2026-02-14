@@ -114,6 +114,9 @@ public class MenuView : MonoBehaviour
     {
         string levelText;
         Difficulty difficulty;
+
+        GameInstance.instance.ShowAd();
+        
         if (levelName == "Easy")
         {
             levelText = "Easy Attempt";

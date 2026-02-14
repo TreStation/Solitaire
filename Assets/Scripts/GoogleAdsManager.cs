@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 public class GoogleAdsManager : MonoBehaviour
 {
 #if UNITY_ANDROID
-    private string interId = "ca-app-pub-2351568987097733/6710434840";
+    private string interId = "ca-app-pub-3940256099942544~3347511713";
 #elif UNITY_IPHONE
-    private string interId = "ca-app-pub-2351568987097733/8486550946";
+    private string interId = "ca-app-pub-3940256099942544~1458002511";
 #else
         private string interId = "unused";
 #endif
