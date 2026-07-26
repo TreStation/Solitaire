@@ -1,0 +1,15 @@
+{
+    "asset": "92270fa93f9984dd8aaf7c1effd37cf6",
+    "fileName": "019ec853-16db-7e8d-8c2b-3d69323f2885.wav",
+    "prompt": "\"Short arcade UI selection click. Soft, rounded attack with a subtle digital tick and tiny percussive snap. Clean, tactile, satisfying, minimal, premium game feel, 40-70ms, no reverb, no melody, designed for rapid repeated navigation without fatigue.\"",
+    "negativePrompt": "",
+    "model": "elevenlabs-sound-effects-v2",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "duration": 0.5,
+    "autoTrim": false,
+    "hasReference": false,
+    "voice": ""
+}

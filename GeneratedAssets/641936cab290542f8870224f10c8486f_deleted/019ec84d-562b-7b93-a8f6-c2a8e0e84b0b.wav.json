@@ -1,0 +1,15 @@
+{
+    "asset": "641936cab290542f8870224f10c8486f",
+    "fileName": "019ec84d-562b-7b93-a8f6-c2a8e0e84b0b.wav",
+    "prompt": "A soft tactile card selection sound for a premium mobile card game. Gentle paper friction blended with a tiny polished wooden click and subtle muted plastic tap. Very short (40-80ms), dry, clean, warm, no reverb, no sparkle, no coin, no magic, no UI beep. Feels like touching a physical luxury playing card on a felt casino table.",
+    "negativePrompt": "",
+    "model": "elevenlabs-sound-effects-v2",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "duration": 0.5,
+    "autoTrim": false,
+    "hasReference": false,
+    "voice": ""
+}

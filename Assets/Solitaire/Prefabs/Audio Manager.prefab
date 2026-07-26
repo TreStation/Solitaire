@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4233326260289705964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8923964330248682140}
+  - component: {fileID: 3503772360845577837}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8923964330248682140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233326260289705964}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 399.75, y: 340.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3503772360845577837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233326260289705964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac4aeef52e70e44e8099d2d84c7b446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: select
+    clip: {fileID: 8300000, guid: 01d5e4927608342f4b7245c91030c7ec, type: 3}
+  - name: draw_card
+    clip: {fileID: 8300000, guid: 3ba81c654808e42ff90fee31ab3ff903, type: 3}
+  - name: valid_move
+    clip: {fileID: 8300000, guid: 3d433c1d099e14a568e3826f891c875a, type: 3}
+  - name: win
+    clip: {fileID: 8300000, guid: 72610a429875248f8aa19918fef89711, type: 3}
+  - name: win_music
+    clip: {fileID: 8300000, guid: 770b10d0e302742db88609ae51388cd5, type: 3}
+  - name: card_click
+    clip: {fileID: 8300000, guid: 9c104095799fb4db6ac54e1bc58ddf3c, type: 3}
+  - name: card_chime
+    clip: {fileID: 8300000, guid: c23afab8589df4c5db5ec0f063f8e555, type: 3}
+  - name: congrats
+    clip: {fileID: 8300000, guid: a02dbf543d2044cf8bbe6700aa878274, type: 3}
+  - name: back_select
+    clip: {fileID: 8300000, guid: 74cd97bfafa394261a5dac0f01968c68, type: 3}
+  - name: start_game
+    clip: {fileID: 8300000, guid: e5c21a9a24f1e452a8286edecd0af864, type: 3}
+  - name: error
+    clip: {fileID: 8300000, guid: d8f4daa69e03144df94eb4f302bedb9f, type: 3}
+  - name: login_click
+    clip: {fileID: 8300000, guid: 099c74fc73a6a400ea2e1198f8d429cd, type: 3}
+  - name: shop
+    clip: {fileID: 8300000, guid: 1f037eaf6fb1f465f806d1d338217ebd, type: 3}
+  musicTracks:
+  - {fileID: 8300000, guid: f1f2a5a0d6bed4170898371a1be7585a, type: 3}
+  - {fileID: 8300000, guid: 0cf0ee510873548daba6bd5ecc654261, type: 3}

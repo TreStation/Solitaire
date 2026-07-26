@@ -1,0 +1,16 @@
+# ----------------------------------------------------------------------------
+# Custom R8 / ProGuard rules
+# ----------------------------------------------------------------------------
+# This project uses the CLASSIC Google Mobile Ads API
+# (com.google.android.gms.ads / GoogleMobileAds.Api) via play-services-ads.
+#
+# However, googlemobileads-unity.aar also bundles the NEXT-GEN wrapper classes
+# (com.google.unity.ads.nextgen.*), which reference the next-gen Ads SDK
+# (com.google.android.libraries.ads.mobile.sdk.**). That next-gen SDK is NOT
+# included in this build, so R8 fails the release build with
+# "Missing classes detected while running R8".
+#
+# These next-gen wrappers are never used at runtime in this project, so we tell
+# R8 not to fail on the unresolved references. R8 will strip the unused classes.
+-dontwarn com.google.android.libraries.ads.mobile.sdk.**
+-dontwarn com.google.unity.ads.nextgen.**

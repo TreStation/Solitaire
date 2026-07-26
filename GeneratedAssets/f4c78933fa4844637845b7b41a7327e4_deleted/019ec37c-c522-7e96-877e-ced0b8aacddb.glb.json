@@ -1,0 +1,23 @@
+{
+    "asset": "f4c78933fa4844637845b7b41a7327e4",
+    "fileName": "019ec37c-c522-7e96-877e-ced0b8aacddb.glb",
+    "prompt": "3D casual game shiny Gem Trophy",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "d43b3d7361f7b4f8b8345248f9c61526",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}

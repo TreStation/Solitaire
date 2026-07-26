@@ -13,6 +13,12 @@ namespace GoogleMobileAds.Editor
 
     private const string MobileAdsSettingsFileExtension = ".asset";
 
+    public enum GmaAndroidSdk
+    {
+      Standard = 0,
+      NextGen = 1
+    }
+
     internal static GoogleMobileAdsSettings LoadInstance()
     {
       // Read from resources.
@@ -42,6 +48,9 @@ namespace GoogleMobileAds.Editor
     private bool enableKotlinXCoroutinesPackagingOption = true;
 
     [SerializeField]
+    private bool enableGradleBuildPreProcessor = true;
+
+    [SerializeField]
     private bool disableOptimizeInitialization;
 
     [SerializeField]
@@ -53,11 +62,24 @@ namespace GoogleMobileAds.Editor
     [SerializeField]
     private string userLanguage = "en";
 
+    [SerializeField]
+    private bool overrideDefaultGmaAndroidSdk = false;
+
+    [SerializeField]
+    private int selectedGmaAndroidSdk = 0;
+
     public string GoogleMobileAdsAndroidAppId
     {
       get { return adMobAndroidAppId; }
 
       set { adMobAndroidAppId = value; }
+    }
+
+    public bool EnableGradleBuildPreProcessor
+    {
+      get { return enableGradleBuildPreProcessor; }
+
+      set { enableGradleBuildPreProcessor = value; }
     }
 
     public bool EnableKotlinXCoroutinesPackagingOption
@@ -100,6 +122,37 @@ namespace GoogleMobileAds.Editor
       get { return userLanguage; }
 
       set { userLanguage = value; }
+    }
+
+    public bool OverrideDefaultGmaAndroidSdk
+    {
+      get { return overrideDefaultGmaAndroidSdk; }
+
+      set { overrideDefaultGmaAndroidSdk = value; }
+    }
+
+    public int SelectedGmaAndroidSdk
+    {
+      get { return selectedGmaAndroidSdk; }
+
+      set { selectedGmaAndroidSdk = value; }
+    }
+
+    /// <summary>
+    /// Returns the active GMA Android SDK architecture.
+    /// This property is decoupled from the stored value to allow easily switching the default
+    /// to Next-Gen in the next phase of migration for users who haven't overridden the default.
+    /// </summary>
+    public GmaAndroidSdk EffectiveGmaAndroidSdk
+    {
+      get
+      {
+        if (overrideDefaultGmaAndroidSdk)
+        {
+          return (GmaAndroidSdk)selectedGmaAndroidSdk;
+        }
+        return GmaAndroidSdk.Standard;
+      }
     }
   }
 }

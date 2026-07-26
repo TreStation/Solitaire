@@ -1,0 +1,15 @@
+{
+    "asset": "72610a429875248f8aa19918fef89711",
+    "fileName": "019ec23a-a185-73e9-b6ff-b185f6deffa4.wav",
+    "prompt": "You win screen. stylized, lounge, warm, marimba, orchestral, relaxing, soundtrack, soft, tropical",
+    "negativePrompt": "",
+    "model": "elevenlabs-sound-effects-v2",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "duration": 3.0,
+    "autoTrim": false,
+    "hasReference": false,
+    "voice": ""
+}

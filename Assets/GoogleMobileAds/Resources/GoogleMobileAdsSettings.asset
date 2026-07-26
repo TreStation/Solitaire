@@ -11,11 +11,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a187246822bbb47529482707f3e0eff8, type: 3}
   m_Name: GoogleMobileAdsSettings
-  m_EditorClassIdentifier: 
-  adMobAndroidAppId: ca-app-pub-6001481544158061~2195577362
-  adMobIOSAppId: ca-app-pub-6001481544158061~9882495692
+  m_EditorClassIdentifier: GoogleMobileAds.Editor::GoogleMobileAds.Editor.GoogleMobileAdsSettings
+  adMobAndroidAppId: ca-app-pub-7198677674712523~8117380896
+  adMobIOSAppId: ca-app-pub-3940256099942544~1458002511
   enableKotlinXCoroutinesPackagingOption: 1
+  enableGradleBuildPreProcessor: 1
   disableOptimizeInitialization: 0
   disableOptimizeAdLoading: 0
-  userTrackingUsageDescription: 
+  userTrackingUsageDescription: This identifier will be used to deliver personalized
+    ads to you.
   userLanguage: en
+  overrideDefaultGmaAndroidSdk: 1
+  selectedGmaAndroidSdk: 1

@@ -1,0 +1,15 @@
+{
+    "asset": "641936cab290542f8870224f10c8486f",
+    "fileName": "019ec84b-45a2-7c90-8fe6-c9abe9f09b01.wav",
+    "prompt": "Card Selection SFX. Casual, tropical card game",
+    "negativePrompt": "",
+    "model": "elevenlabs-sound-effects-v2",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "duration": 1.0,
+    "autoTrim": false,
+    "hasReference": false,
+    "voice": ""
+}

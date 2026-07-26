@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 17621740537116719}
-  - component: {fileID: 6221335587050398539}
   m_Layer: 0
   m_Name: Waste
   m_TagString: Untagged
@@ -63,22 +62,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8411749982603627145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6221335587050398539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297882476766556039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 1
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
 --- !u!1 &734412303193301178
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636409541216334678}
-  - component: {fileID: 2483407564090710445}
+  - component: {fileID: 101350956414366459}
   m_Layer: 0
   m_Name: Tableau 5
   m_TagString: Untagged
@@ -116,7 +99,7 @@ Transform:
   - {fileID: 6618529639170616900}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2483407564090710445
+--- !u!114 &101350956414366459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,13 +108,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 734412303193301178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &875592874377171400
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2773184942670805095}
-  - component: {fileID: 7144594858141570909}
+  - component: {fileID: 1684656010929251981}
   m_Layer: 0
   m_Name: Tableau 2
   m_TagString: Untagged
@@ -197,7 +178,7 @@ Transform:
   - {fileID: 9003539825950620513}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7144594858141570909
+--- !u!114 &1684656010929251981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,13 +187,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 993341678731502122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &1997096784310547442
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8935706425530323227}
-  - component: {fileID: 8102225887822906539}
+  - component: {fileID: 3889950235317901603}
   m_Layer: 0
   m_Name: Tableau 1
   m_TagString: Untagged
@@ -401,7 +380,7 @@ Transform:
   - {fileID: 4269748178694768162}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8102225887822906539
+--- !u!114 &3889950235317901603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -410,13 +389,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3393085800623510728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &3510050449306071561
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7566686825586187549}
-  - component: {fileID: 3739731263912969772}
+  - component: {fileID: 4334979113042797405}
   m_Layer: 0
   m_Name: Tableau 7
   m_TagString: Untagged
@@ -591,7 +568,7 @@ Transform:
   - {fileID: 4005217516935383314}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3739731263912969772
+--- !u!114 &4334979113042797405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -600,13 +577,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4378183582651695821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &5074550320067168796
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6080589350233799729}
-  - component: {fileID: 9075608370608100621}
+  - component: {fileID: 432384163057779777}
   m_Layer: 0
   m_Name: Tableau 6
   m_TagString: Untagged
@@ -800,7 +775,7 @@ Transform:
   - {fileID: 4069867069730880295}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9075608370608100621
+--- !u!114 &432384163057779777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,13 +784,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5928905848507466127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &6282430456916024753
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8543627667675261259}
-  - component: {fileID: 6616800877953857779}
+  - component: {fileID: 3159540941892330503}
   m_Layer: 0
   m_Name: Tableau 4
   m_TagString: Untagged
@@ -852,7 +825,7 @@ Transform:
   - {fileID: 1406044358817852330}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6616800877953857779
+--- !u!114 &3159540941892330503
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -861,13 +834,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6282430456916024753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &6476888470099707730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1209,9 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1261,9 +1235,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7792674259306138823
 GameObject:
@@ -1305,7 +1281,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8863300155369912612}
-  - component: {fileID: 5813848227796864617}
   - component: {fileID: 7818969527840860059}
   - component: {fileID: 3766113410332647324}
   - component: {fileID: 5607338799297513398}
@@ -1332,22 +1307,6 @@ Transform:
   - {fileID: 8603094672739175990}
   m_Father: {fileID: 8411749982603627145}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &5813848227796864617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8091583302647718814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 0
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
 --- !u!65 &7818969527840860059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1376,10 +1335,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8091583302647718814}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.02
+  m_LinearDamping: 0
+  m_AngularDamping: 0.02
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1516,7 +1475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8213674022128342600}
-  - component: {fileID: 2146820961428225348}
+  - component: {fileID: 3905244026024753700}
   m_Layer: 0
   m_Name: Tableau 3
   m_TagString: Untagged
@@ -1542,7 +1501,7 @@ Transform:
   - {fileID: 2298341430806652426}
   m_Father: {fileID: 7020009676806437358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2146820961428225348
+--- !u!114 &3905244026024753700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1551,13 +1510,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8891998932202950072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc8139478e1e43f699b9abaae5b6dbd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4473b571a59049c08c340c3e37d6516, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  cards: []
-  pileType: 2
-  displayCard: {fileID: 0}
-  col: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TableauPile
+  columnRoot: {fileID: 0}
+  config: {fileID: 11400000, guid: 937a38bfcd98747f298a8656249ecef0, type: 2}
 --- !u!1 &9220938431860609075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +1580,9 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1644,9 +1604,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &8301879551890191035
 MeshCollider:
